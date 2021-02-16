@@ -156,7 +156,7 @@ end architecture testbench;
 ```
 
 
-![Morgan's Law](https://github.com/FranciscaCampos/Digital-electronics-1/edit/main/Labs/01-gates/MORGANS.PNG)
+![Morgan's Law](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
 
 [Link to the Morgan's Law exercise] (https://www.edaplayground.com/x/vDBe)
 
