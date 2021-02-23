@@ -156,6 +156,8 @@ end architecture testbench;
 ```
 
 
+![Morgan's Law](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+
 [Link to the Morgan's Law exercise] (https://www.edaplayground.com/x/vDBe)
 
 
@@ -302,5 +304,7 @@ begin
 end architecture testbench;
 
 ```
+
+![Distributive Exercise](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Distr.PNG)
 
 [Link to the Distributive exercise](https://www.edaplayground.com/x/ZtxU)
