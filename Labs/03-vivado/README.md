@@ -148,3 +148,30 @@ begin
 end test;
 
 ```
+
+![Simulation waveform](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/03-vivado/Simulation.PNG)
+
+
+## 3. Vivado Tutorial
+
+First we create a project and pick the corresponding board. In our case Nexys A7-50T
+
+
+![Pick the board](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/03-vivado/1PickBoard.PNG)
+
+Then we´ll see the summary of the created project
+
+![Summary](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/03-vivado/ProjectSummary.PNG)
+
+Once we have our project created, we add the design and the simulation files, in our case the design and the testbench. Also, we edit the .xdc file and save it.
+
+![Add Design](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/03-vivado/AddDesign.PNG)
+
+
+![Add Simulation](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/03-vivado/AddSimu.PNG)
+
+![Editing .xdc](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/03-vivado/EditXDC.PNG)
+
+![Saving .xdc](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/03-vivado/SaveXDC.PNG)
+
+
