@@ -2,9 +2,9 @@
 
 ## 1.  Preparation tasks
 
-![Capture from the Manual](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+![Capture from the Manual](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/04-segment/7segCon.png)
 
-![Capture from the Schematic](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+![Capture from the Schematic](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/04-segment/Schematic7Seg.PNG)
 
 
 Hex | Inputs | A | B | C | D | E | F | G |
@@ -231,8 +231,8 @@ begin
 end architecture testbench;
 ```
 
-![First Simulation part 1](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
-![First Simulation part 2](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+![First Simulation part 1](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/04-segment/Sim1.PNG)
+![First Simulation part 2](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/04-segment/Sim2.PNG)
 
  ```vhdl
  
@@ -413,6 +413,6 @@ report "Stimulus process started" severity note;
 end architecture testbench;
  ```
  
- ![LED(7:4) indicators](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+ ![LED(7:4) indicators](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/04-segment/SimuFinal.PNG)
 
  
