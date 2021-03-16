@@ -3,9 +3,9 @@
 ## 1.  Preparation tasks
 
 
-![Capture from the Manual](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+![Capture from the Manual](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/05-counter/PushManu.PNG)
 
-![Capture from the Schematic](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+![Capture from the Schematic](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/05-counter/PushSc.PNG)
 
 
 Time Interval | Number of clk periods | Number of clk periods in hex |       Number of clk periods in binary     |
@@ -86,6 +86,9 @@ p_cnt_up_down : process(clk)
     end process p_stimulus;
 ```
 
+
+![Capture from the Schematic](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/05-counter/Wave1.PNG)
+
  ## 3.  Top Level
  
  
@@ -154,4 +157,4 @@ begin
 end architecture Behavioral;
 ```
 
-![Top layers](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)
+![Top layers](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/05-counter/IMG_20210316_231156.jpg)
