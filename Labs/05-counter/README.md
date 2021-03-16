@@ -17,9 +17,6 @@ Time Interval | Number of clk periods | Number of clk periods in hex |       Num
    500 ms     |     50 000 000        |         x"2FA_F080"          |   b"0010_1111_1010_1111_0000_1000_0000"   |
     1 sec     |    100 000 000        |         x"5F5_E100"          |   b"0101_1111_0101_1110_0001_0000_0000"   |
 
-
-
-
  ## 2.  Seven-segment display decoder
 
 ```vhdl
