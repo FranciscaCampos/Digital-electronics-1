@@ -75,7 +75,7 @@ p_d_latch : process ( en , d, anrst )
     end process p_stimulus;
 ```
 	
-![D latch](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![D latch](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/07-ffs/d_latch.PNG)	
 	
 	
 ## 3. Flip-flops
@@ -157,7 +157,7 @@ p_d_latch : process ( en , d, anrst )
 
 ```
 
-![D arst](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![D arst](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/07-ffs/flip_d.PNG)	
 
 ```vhdl
     p_clk_gen : process
@@ -199,7 +199,7 @@ p_d_latch : process ( en , d, anrst )
     end process p_stimulus;
 ```	
 
-![D rst](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![D rst](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/07-ffs/d_flip_sinc.PNG)	
 
 ```vhdl
 p_jk_ff_rst : process ( clk ,rst )
@@ -266,7 +266,7 @@ p_jk_ff_rst : process ( clk ,rst )
     end process p_stimulus;
 	```
 	
-![JK](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![JK](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/07-ffs/jk.PNG)	
 	
 
 ```vhdl
@@ -350,4 +350,8 @@ end architecture Behavioral ;
         wait;
     end process p_stimulus;
 ```
-![T](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![T](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/07-ffs/t.PNG)
+
+## 4. Shift Register
+
+![Shift register](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/07-ffs/IMG_20210330_231024.jpg)
