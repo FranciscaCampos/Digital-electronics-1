@@ -110,10 +110,41 @@ p_traffic_fsm : process(clk)
         end if; -- Rising edge
     end process p_traffic_fsm;
 ```
+
+```vhdl
+p_output_fsm : process(s_state)
+    begin
+        case s_state is
+            when STOP1 =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+            when WEST_GO =>
+                south_o <= c_RED;
+                west_o  <= c_GREEN;
+            when WEST_WAIT =>
+                south_o <= c_RED;
+                west_o  <= c_YELLOW;
+            when STOP2 =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+            when SOUTH_GO =>
+                south_o <= c_GREEN;
+                west_o  <= c_RED;
+             when SOUTH_WAIT =>
+                south_o <= c_YELLOW;
+                west_o  <= c_RED;
+
+            when others =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+        end case;
+    end process p_output_fsm;
+```
 	 
 ![Sim1](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/08-traffic-lights/Sim1.PNG)	
 	
 ## 3. Smart controller
+	
 	
 	
           States-Output\Input              | 	No cars (00) | Cars to West(01)  | Cars to South(10) | Cars to Bouth(11)  |
@@ -122,6 +153,7 @@ p_traffic_fsm : process(clk)
  STOPS   - south_o = yellow,west_o = red   |    WEST_GO      |     WEST_GO       |      WEST_GO      |       WEST_GO      |
  WEST_GO  - south_o = red,west_o = green   |    WEST_GO      |      WEST_GO      |      STOPW        |        STOPW       |
  STOPW   - south_o = red,west_o = yellow   |    SOUTH_GO     |     SOUTH_GO      |      SOUTH_GO     |       SOUTH_GO     |
+ 
  
  
  
