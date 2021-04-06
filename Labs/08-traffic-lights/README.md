@@ -148,7 +148,7 @@ p_output_fsm : process(s_state)
 	
 	
           States-Output\Input              |  No cars (00) | Cars to West(01)  | Cars to South(10) | Cars to Bouth(11)  |
-------------------------------------------------|------------------|------------------------|--------------------------|---------------------------|
+------------------------------------------------|------------------|------------------------|------------------------|---------------------------|
  SOUTH_GO - south_o = green,west_o = red   |    SOUTH_GO     |      STOPS        |     SOUTH_GO      |        STOPS       |
  STOPS   - south_o = yellow,west_o = red   |    WEST_GO      |     WEST_GO       |      WEST_GO      |       WEST_GO      |
  WEST_GO  - south_o = red,west_o = green   |    WEST_GO      |      WEST_GO      |      STOPW        |        STOPW       |
