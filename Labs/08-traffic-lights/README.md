@@ -10,9 +10,9 @@ Input P  | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 1 |
 Output R | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
 
 
-![Connection](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![Connection](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/08-traffic-lights/Sch.PNG)	
 
-![Connection2](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![Connection2](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/08-traffic-lights/Schematic.PNG)	
 
 RGB LED | 	Artix-7 pin names | Red   | Yellow | Green  |
 --------|---------------------|-------|--------|--------|
@@ -22,7 +22,7 @@ RGB LED | 	Artix-7 pin names | Red   | Yellow | Green  |
 
 ## 2. Traffic light controller.
 
-![Diag](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![Diag](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/08-traffic-lights/Diag1.PNG)	
 
 ```vhdl
 p_traffic_fsm : process(clk)
@@ -109,11 +109,11 @@ p_traffic_fsm : process(clk)
             end if; -- Synchronous reset
         end if; -- Rising edge
     end process p_traffic_fsm;
-	```
+```
 	 
-	![Sim1](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+![Sim1](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/08-traffic-lights/Sim1.PNG)	
 	
-	## 3. Smart controller
+## 3. Smart controller
 	
 	
           States-Output\Input              | 	No cars (00) | Cars to West(01)  | Cars to South(10) | Cars to Bouth(11)  |
@@ -125,7 +125,7 @@ p_traffic_fsm : process(clk)
  
  
  
- 	![Diam2](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/01-gates/Morgans.PNG)	
+ ![Diam2](https://github.com/FranciscaCampos/Digital-electronics-1/blob/main/Labs/08-traffic-lights/Diag2.PNG)	
  
  
  
@@ -150,9 +150,9 @@ p_smart_traffic_fsm : process(clk)
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
                         else
-							if ((sw1 = '0' and sw2 = '1') or (sw1 = '1' and sw2 = '1')) then
-								s_state <= STOPS;
-							end if;
+				if ((sw1 = '0' and sw2 = '1') or (sw1 = '1' and sw2 = '1')) then
+					s_state <= STOPS;
+				end if;
                             -- Move to the next state
                             s_state <= STOPS;
                             -- Reset local counter value
@@ -166,9 +166,9 @@ p_smart_traffic_fsm : process(clk)
                         if (s_cnt < c_DELAY_1SEC) then
                             s_cnt <= s_cnt + 1;
                         else
-							if ((sw1 = '0' and sw2 = '0') or (sw1 = '0' and sw2 = '1') or (sw1 = '1' and sw2 = '0') or (sw1 = '1' and sw2 = '1')) then
-								s_state <= WEST_GO;
-							end if;
+				if ((sw1 = '0' and sw2 = '0') or (sw1 = '0' and sw2 = '1') or (sw1 = '1' and sw2 = '0') or (sw1 = '1' and sw2 = '1')) then
+					s_state <= WEST_GO;
+				end if;
                             -- Move to the next state
                             s_state <= WEST_GO;
                             -- Reset local counter value
@@ -181,9 +181,9 @@ p_smart_traffic_fsm : process(clk)
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
                         else						
-							if ((sw1 = '1' and sw2 = '0') or (sw1 = '1' and sw2 = '1')) then
-								s_state <= STOPW;
-							end if;
+				if ((sw1 = '1' and sw2 = '0') or (sw1 = '1' and sw2 = '1')) then
+					s_state <= STOPW;
+				end if;
                             -- Move to the next state
                             s_state <= STOPW;
                             -- Reset local counter value
@@ -199,9 +199,9 @@ p_smart_traffic_fsm : process(clk)
                             s_cnt <= s_cnt + 1;
                         else
 						
-							if ((sw1 = '0' and sw2 = '0') or (sw1 = '0' and sw2 = '1') or (sw1 = '1' and sw2 = '0') or (sw1 = '1' and sw2 = '1')) then
-								s_state <= SOUTH_GO;
-							end if;
+				if ((sw1 = '0' and sw2 = '0') or (sw1 = '0' and sw2 = '1') or (sw1 = '1' and sw2 = '0') or (sw1 = '1' and sw2 = '1')) then
+						s_state <= SOUTH_GO;
+				end if;
                             -- Move to the next state
                             s_state <= SOUTH_GO;
                             -- Reset local counter value
@@ -218,7 +218,7 @@ p_smart_traffic_fsm : process(clk)
             end if; -- Synchronous reset
         end if; -- Rising edge
     end process p_traffic_fsm;
-	```
+```
  
  
  
